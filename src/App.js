@@ -5,7 +5,7 @@ import successSound from "./success.mp3";
 import failureSound from "./notsuccess.mp3";
 import "./App.css";
 
-const correctPassword = "Amit bhai";
+const correctPassword = "Amitbhai";
 
 const App = () => {
   const [password, setPassword] = useState("");
@@ -19,11 +19,11 @@ const App = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (password === correctPassword) {
-      setMessage("Success! You entered the correct password.");
+      setMessage("Padharo Mare Desh!");
       setGif(successGif);
       playSound(successSound);
     } else {
-      setMessage("Oops! Incorrect password. Please try again.");
+      setMessage("Chall Bhosadike!");
       setGif(failureGif);
       playSound(failureSound);
     }
@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="container">
-        <h1>Password Validation</h1>
+        <h1>Password Likho</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="password"
@@ -45,7 +45,7 @@ const App = () => {
             onChange={handlePasswordChange}
             placeholder="Enter password..."
           />
-          <button type="submit">Submit</button>
+          <button type="submit">Press me daddy</button>
         </form>
         <p>{message}</p>
         {gif && <img src={gif} alt="Gif" />}
