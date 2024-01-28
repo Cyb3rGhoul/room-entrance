@@ -5,7 +5,7 @@ import successSound from "./success.mp3";
 import failureSound from "./notsuccess.mp3";
 import "./App.css";
 
-const correctPassword = "Amitbhai";
+const correctPassword = "bhosadike";
 
 const App = () => {
   const [password, setPassword] = useState("");
